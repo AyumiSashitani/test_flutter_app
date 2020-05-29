@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:testflutterapp/Page2.dart';
+import 'package:testflutterapp/AnimatedContainerSample.dart';
 
 main() {
   runApp(MaterialApp(
@@ -10,10 +10,12 @@ main() {
 class Page1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("test"),
+      ),
       body: Center(
         child: RaisedButton(
-          child: Text('Go!'),
+          child: Text('AnimatedContainer Sample'),
           onPressed: () {
             Navigator.of(context).push(_createRoute());
           },
@@ -25,7 +27,7 @@ class Page1 extends StatelessWidget {
 
 Route _createRoute() {
   return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => Page2(),
+    pageBuilder: (context, animation, secondaryAnimation) => AnimatedContainerSample(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
       var begin = Offset(0.0, 1.0);
       var end = Offset.zero;

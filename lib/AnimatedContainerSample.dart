@@ -2,12 +2,12 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class Page2 extends StatefulWidget {
+class AnimatedContainerSample extends StatefulWidget {
   @override
   _AnimatedContainerAppState createState() => _AnimatedContainerAppState();
 }
 
-class _AnimatedContainerAppState extends State<Page2> {
+class _AnimatedContainerAppState extends State<AnimatedContainerSample> {
   // Define the various properties with default values. Update these properties
   // when the user taps a FloatingActionButton.
   double _width = 50;
