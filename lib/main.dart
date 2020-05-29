@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testflutterapp/Page2.dart';
 
 main() {
   runApp(MaterialApp(
@@ -38,15 +39,4 @@ Route _createRoute() {
       );
     },
   );
-}
-
-class Page2 extends StatelessWidget {
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: Center(
-        child: Text('Page 2'),
-      ),
-    );
-  }
 }
